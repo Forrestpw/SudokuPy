@@ -59,7 +59,7 @@ def print_board(bo):
 
     for i in range(len(bo)):
         if i % 3 == 0 and i != 0:
-            print("- - - - - - - - - - - - - ")
+            print("- - - - - - - - - - - -")
 
         for j in range(len(bo[0])):
             if j % 3 == 0 and j != 0:
