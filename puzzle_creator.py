@@ -38,3 +38,31 @@ def create_zero_board(difficulty):
         zero_board.append(sample([0]*num_zeros + [1]*(9-num_zeros), 9))
 
     return zero_board
+
+
+# fills the given solved sudoku with zeros
+# and symmetrically mirrors the zeros on the board as if the puzzle was folded in half diagonally
+def add_zeros_to_board(bo, difficulty):
+    midpoint = len(bo) // 2
+    end_row = len(bo) - 1
+    end_col = len(bo[0]) - 1
+    zero_board = create_zero_board(difficulty)
+
+    # iterates through the zero_board looking for zeros
+    # when a zero is found replace the value of the same location on the sudoku board with a zero
+    # then mirror it to the other portion of the board for a symmetrical puzzle
+    for i in range(len(zero_board)):
+        for j in range(len(bo[0])):
+
+            if i == midpoint and j > midpoint:
+                break
+
+            if zero_board[i][j] == 0:
+                bo[i][j] = 0
+                bo[end_row][end_col] = 0
+
+            end_col -= 1
+        end_col = len(bo[0]) - 1
+        end_row -= 1
+
+    return bo
