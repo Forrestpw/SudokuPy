@@ -18,3 +18,23 @@ def create_board():
     solution.solve(board)
 
     return board
+
+
+# creates a board of 0s and 1s of size 5 x 9
+# number of 0s is based on the given difficulty level
+def create_zero_board(difficulty):
+    if str.lower(difficulty) == "medium":
+        num_zeros = 5
+    elif str.lower(difficulty) == "hard":
+        num_zeros = 6
+    else:
+        num_zeros = 4
+
+    zero_board = []
+
+    # Fills each row with 0s and 1s randomly
+    # Each row has an exact number of 0s based on difficulty setting
+    for i in range(5):
+        zero_board.append(sample([0]*num_zeros + [1]*(9-num_zeros), 9))
+
+    return zero_board
