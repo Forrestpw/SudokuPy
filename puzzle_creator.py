@@ -1,5 +1,5 @@
 from random import sample
-import solution
+import solver
 
 
 # Create a solved sudoku of size 9 x 9
@@ -15,7 +15,7 @@ def create_board():
             board.append([0, 0, 0, 0, 0, 0, 0, 0, 0])
 
     # Solves the board giving a correct sudoku puzzle
-    solution.solve(board)
+    solver.solve(board)
 
     return board
 
