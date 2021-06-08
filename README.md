@@ -16,6 +16,6 @@ As you will see the board is symmetrical, the current selected square is highlig
 ## Setup
 You will need python installed on your machine (you can get that from [here](https://www.python.org/)) and an IDE of your choice I use [PyCharm](https://www.jetbrains.com/pycharm/)
 1. Set up your virtual enviornment, [here](https://realpython.com/python-virtual-environments-a-primer/) is a great guide on this from the guys at Real Python
-1. run the following pip installs in your virual enviornment
+1. run the following pip installs in your virual enviornment:
   * ``` pip install pygame ```
 3. Now just run the GUI.py file and it should open up the game for you to play.
