@@ -12,3 +12,10 @@ Now that we have a valid board that is symmetrical and filled with 0's (based on
 
 As you will see the board is symmetrical, the current selected square is highlighted by a red box, inside the box you can see my current entry I can submit it by pressing enter, a red X indicates the number of failed attempts in the bottom left, and a timer in the bottom right.
 
+
+## Setup
+You will need python installed on your machine (you can get that from [here](https://www.python.org/)) and an IDE of your choice I use [PyCharm](https://www.jetbrains.com/pycharm/)
+1. Set up your virtual enviornment, [here](https://realpython.com/python-virtual-environments-a-primer/) is a great guide on this from the guys at Real Python
+1. run the following pip installs in your virual enviornment
+  * ``` pip install pygame ```
+3. Now just run the GUI.py file and it should open up the game for you to play.
