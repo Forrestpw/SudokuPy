@@ -17,7 +17,7 @@ def solve(bo):
 
     return False
 
-# Check if the current location is a valid solution for that square
+# Check if the current number is a valid solution for that square
 def valid(bo, num, pos):
 
     # Check row
