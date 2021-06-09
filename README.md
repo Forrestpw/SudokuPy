@@ -1,5 +1,5 @@
 # About
-SudokuPy first started out as a program that used a back tracking algorithm to solve any Sudoku puzzle. Now though, the project has come further and is able to use the back tracking algorthim to generate a valid Sudoku puzzle to be solved, that paired with pygame created a nice little Sudoku game for the desktop.
+SudokuPy first started out as a script that used a back tracking algorithm to solve any Sudoku puzzle. Now, the project has come further and is able to use the back tracking algorthim to generate a valid Sudoku puzzle to be solved, that paired with pygame created a nice little Sudoku game for the desktop.
 
 ## How it works
 
